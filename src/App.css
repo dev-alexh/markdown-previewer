@@ -1,39 +1,81 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+body {
+  font-family: "Open Sans", Arial;
+  margin: 0;
+  font-size: 0.9em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#myApp {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+#editorBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  background-color: #bfd7ff;
+  padding: 20px 0px 30px 0px;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+#editor {
+  resize: none;
+  font-family: Consolas;
+  width: 90%;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+#previewBox {
+  width: 100%;
+  background-color: #e2fdff;
+  padding: 20px 0px 30px 0px;
+}
+
+#previewHeading {
+  padding: 0px 0px 0px 15px;
+}
+
+#preview {
+  word-wrap: break-word;
+  background-color: white;
+  border: solid;
+  border-width: thin;
+  border-color: #cccccc;
+  border-radius: 15px;
+  box-shadow: 2px 2px #d9d9d9;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+footer {
+  text-align: right;
+  font-size: 0.8em;
+  border-top: solid;
+  border-top-color: #cccccc;
+  border-top-width: thin;
+}
+
+@media only screen and (min-width: 768px) {
+  #myApp {
+    display: flex;
+    flex-direction: row;
   }
-  50% {
-    transform: translateY(10px)
+  #editorHeading {
+    padding: 0px 0px 30px 0px;
   }
-  100% {
-    transform: translateY(0px)
+
+  #editorBox {
+    width: 50%;
+    padding: 40px 0px 100px 0px;
+  }
+
+  #previewHeading {
+    padding: 0px 0px 30px 15px;
+  }
+
+  #previewBox {
+    width: 50%;
+    padding: 40px 0px 100px 0px;
   }
 }
