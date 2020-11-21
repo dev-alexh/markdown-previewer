@@ -1,5 +1,5 @@
 # markdown-previewer
-Markdown previewer web project created for the Front End Libraries Developer Certificate (freeCodeCamp).
+Markdown previewer web app created for the Front End Libraries Developer Certificate (freeCodeCamp).
 
 Languages: HTML5, CSS3, JavaScript
 
